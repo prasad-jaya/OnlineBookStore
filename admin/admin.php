@@ -13,7 +13,16 @@
 <a href="admin_update.php" type="button" class="btn btn-primary">Update Items</a>
 <a type="button" class="btn btn-primary">Primary</a>
 
+<?php 
 
+if(isset($_COOKIE["myCookie"])){  
+    echo $_COOKIE["myCookie"];
+}
+else{
+    echo "heloo";
+}
+    
+ ?>
 </body>
 </html>
 

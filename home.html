@@ -1,0 +1,266 @@
+
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   
+   <title>HOME PAGE</title>
+   <link rel="shortcut icon" href="images/cento books.png" />
+ 
+   <meta name="keywords" content="Book Store Home Page" />
+   <meta name="description" content="Book Store Home Page" />
+   
+   <link rel="stylesheet" type="text/css" href="stylesheets/stylesheethome.css">
+</head>
+<div class="headerLogo">
+	<img src="images/cento books.png">
+</div>
+
+        <div id="temp_container">
+		<div id="temp_menu">
+    	<ul>
+            <li><a href="D:\Study Materials\Year 01\Semester 02\Assignments\IWT ASSIGNMENT\HTML Pages\home.html" class="current">HOME</a></li>
+            <li><a href="D:\Study Materials\Year 01\Semester 02\Assignments\IWT ASSIGNMENT\HTML Pages\store.html">STORE</a></li>
+            <li><a href="D:\Study Materials\Year 01\Semester 02\Assignments\IWT ASSIGNMENT\HTML Pages\mywatchlist.html">WATCH LIST</a></li>            
+            <li><a href="D:\Study Materials\Year 01\Semester 02\Assignments\IWT ASSIGNMENT\HTML Pages\category.html">CATEGORIES</a></li>  
+            <li><a href="D:\Study Materials\Year 01\Semester 02\Assignments\IWT ASSIGNMENT\HTML Pages\userprof.html">PROFILE</a></li> 
+            <li><a href="D:\Study Materials\Year 01\Semester 02\Assignments\IWT ASSIGNMENT\HTML Pages\About_us.html">ABOUT</a></li>
+			<li><a href="D:\Study Materials\Year 01\Semester 02\Assignments\IWT ASSIGNMENT\HTML Pages\contactus.html">CONTACT US</a></li>
+   
+			<li><a href = "D:\Study Materials\Year 01\Semester 02\Assignments\IWT ASSIGNMENT\HTML Pages\login.html"> Log In</a></li>
+			<li><a href = "D:\Study Materials\Year 01\Semester 02\Assignments\IWT ASSIGNMENT\HTML Pages\Registration Page.html"> Sign Up</a></li>
+		</ul>
+	   </div> 
+</div>
+
+	
+	
+	
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="images/hm44.jpg" width = "100%" >
+  
+</div>
+<div class="mySlides fade">
+  
+  <img src="images/hm55.jpg" width = "100%">
+  
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="images/44.jpg" width="100%" >
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="images/hm33.jpg" width = "100%">
+  
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> <br/><br/>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+    
+       <div class = "slidewrapper">
+       <div class="slide" style="max-width:auto">
+ 		
+ 	 
+ 	  <div class ="slider-content">
+	  <div class ="on-slide">
+		<h3 align="center">Centro Books.lk</h3>
+		<p>Where the leaders are made with empowering knowledge</p>
+		<form class="example" action="#" method="POST">
+		<input type="text" placeholder="Search" name="search">
+  		<button type="submit">Find<i class="fa fa-search"></i></button>
+		</form>
+		</div>
+	    </div>
+	</div>
+</div>
+</br>
+    
+       <div id="temp_content">
+       <div id="temp_content_left">
+        	<div class="temp_content_left_section">
+            	<h1>Top Rated Items</h1>
+                <ul>
+                    <li><a href="subpage.html">Transcription</a></li>
+                    <li><a href="subpage.html">Bad Blood</a></li>
+                    <li><a href="#">The Witch Elm</a></li>
+                    <li><a href="#">The Mars Room</a></li>
+                    <li><a href="#">The Great Alone</a></li>
+                    <li><a href="#">The Recovering</a></li>
+                    <li><a href="#">So You Want to Talk About Race</a></li>
+                    <li><a href="#">The Female Persuasion</a></li>
+                    <li><a href="#">If You Leave Me</a></li>
+		    <li><a href="#">How to Change Your Mind</a></li>
+            	</ul>
+         </div>
+		 
+		<div class="temp_content_left_section">
+            	<h1>New Release</h1>
+                <ul>
+                    <li><a href="#">These Truths</a></li>
+                    <li><a href="#">You Think It, I’ll Say It</a></li>
+                    <li><a href="#">Nine Perfect Strangers</a></li>
+                    <li><a href="#">A Place For Us</a></li>
+                    <li><a href="#">Last Stories</a></li>
+                    <li><a href="#">The Library Book</a></li>
+                    <li><a href="#">The Third Hotel</a></li>
+                    <li><a href="#">She Has Her Mother’s Laugh</a></li>
+                    <li><a href="#">Last Stories</a></li>
+                    <li><a href="#">Love and Ruin</a></li>
+            	</ul>
+           </div>
+          </div> 
+        
+        <div id="temp_content_right">
+        	<div class="temp_product_box">
+            	<h1>Small Garden <span>(by John Brookes)</span></h1>
+   	        <img src="images/a25.jpg"  width="50px" height="60px" alt="image" />
+                <div class="product_info">
+                <p>First published in 1971, this is an ever-expanding book, with 1,500 new species.</p>
+                <h3>Rs.1055</h3><br/>
+                    <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div>
+                    <div class="detail_button"><a href="subpage.html">Detail</a></div>
+					<br/><br/>
+                </div>
+				
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            
+            <div class="cleaner_with_width">&nbsp;</div>
+            
+            <div class="temp_product_box">
+            	<h1>Ceylove  <span>(by Jessica Heath)</span></h1>
+       	        <img src="images/a26.jpg" width="50px" height="60px" alt="image" />
+                <div class="product_info">
+                <p>CEYLOVE is the marriage of Ceylon, the former British colonial.</p>
+                <h3>Rs.5500</h3><br/>
+                    <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div>
+                    <div class="detail_button"><a href="subpage.html">Detail</a></div>
+					<br/><br/>
+                </div>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+			
+            
+            <div class="cleaner_with_height">&nbsp;</div>
+			<br/><br/><br/>
+            
+            <div class="temp_product_box">
+            	<h1>TAX POLICY IN SRI LANKA <span>(by Saman Kelegama)</span></h1>
+   	        <img src="images/a27.jpg" width="50px" height="60px" alt="image" />
+                <div class="product_info">
+                <p>In recent years, Sri Lanka's tax Revenue as a...</p>
+                <h3>Rs.1000</h3><br/>
+                    <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div>
+                    <div class="detail_button"><a href="subpage.html">Detail</a></div>
+                </div>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            
+            <div class="cleaner_with_width">&nbsp;</div>
+            
+            <div class="temp_product_box">
+            	<h1>STALIN VOLUME 01<span>(by Stephen Kotkin)</span></h1>
+            	<img src="images/a28.jpg" width="50px" height="60px" alt="image" />
+                <div class="product_info">
+                <p> magnificent new biography that revolutionizes our...</p>
+                <h3>Rs.2250</h3><br/>
+                    <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div>
+                    <div class="detail_button"><a href="subpage.html">Detail</a></div>
+                </div>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            
+            <div class="cleaner_with_height">&nbsp;</div>
+			<br/><br/><br/>
+            
+			
+
+		<div id="temp_content_right">
+        	<div class="temp_product_box">
+            	<h1>THROUGH THE COVERS<span>(by Channa Gunasekara)</span></h1>
+   	        <img src="images/a29.jpg"  width="50px" height="60px" alt="image" />
+                <div class="product_info">
+                <p>‘‘Through the Covers’’ is a captivating and moving...</p>
+                <h3>Rs.850</h3><br/>
+                    <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div>
+                    <div class="detail_button"><a href="subpage.html">Detail</a></div>
+                </div>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            
+            <div class="cleaner_with_width">&nbsp;</div>
+			
+            
+            
+            <div class="temp_product_box">
+            	<h1>SUNDAY SENTIMENTS<span>(by Karan Thapar)</span></h1>
+       	        <img src="images/a30.jpg" width="50px" height="60px" alt="image" />
+                <div class="product_info">
+                <p>Written in Karan's inimitable style, the...</p>
+                <h3>Rs.1450</h3><br/><br/>
+                    <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div>
+                    <div class="detail_button"><a href="subpage.html">Detail</a></div>
+                </div>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+			<br/><br/>
+            
+            <div class="cleaner_with_height">&nbsp;</div><br/><br/><br/><br/>
+
+            
+            <a href="https://digibutterfly.com/digital-billboard-advertising/"><img src="images/add1.jpg" width="1200px" height="250px" alt="ads" /></a> <br/><br/><br/>
+    
+         <div id="temp_footer">
+    
+	       <a href="subpage.html">Home</a> | <a href="subpage.html">Search</a> | <a href="subpage.html">Books</a> | <a href="#">New Releases</a> | <a href="#">FAQs</a> | <a href="#">Contact Us</a><br />
+       </br></br>
+	   <div class="social">
+<a href ="https://www.facebook.com/">
+<img src ="images/facebook.png" width="30px" height="30px"></a>
+<a href ="https://www.instgram.com/">
+<img src ="images/insta.png" width="30px" height="30px"></a>
+<a href ="https://www.twitter.com/">
+<img src ="images/twitter.png" width="30px" height="30px"></a>
+<a href ="https://www.whatsapp.com/">
+<img src ="images/3.png" width="30px" height="30px"></a>
+<a href ="https://www.viber.com/">
+<img src ="images/viber.png" width="30px" height="30px"></a>
+</div>
+
+</html>

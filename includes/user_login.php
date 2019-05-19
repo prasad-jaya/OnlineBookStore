@@ -1,3 +1,7 @@
+<?php
+// Start the session
+session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,13 +17,10 @@
 
 <div class="container">
 
-
-
-
     <form action="user_login.php" method="POST">
     <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="user" name="user" placeholder="Enter email">
+        <input type="text" class="form-control" id="user" name="user" placeholder="Enter email">
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
     <div class="form-group">
@@ -30,6 +31,36 @@
     <button type="submit" class="btn btn-primary">Login</button>
     </form>
 </div>
+<?php 
+    include_once 'dbconnect.php';
+    
+    if(isset($_POST['user'])){
+        $user = $_POST['user'];
+        $pass = $_POST['pass'];
+        //$user = stripcslashes($user);
+
+        $sql = "Select name,user_id from users where username='$user' and password='$pass';";
+        $result = mysqli_query($conn,$sql);
+        $resultCheck = mysqli_num_rows($result);
+    
+        if($resultCheck > 0) {
+             while ($row = mysqli_fetch_assoc($result)){
+                $id = $row['user_id'];
+                $_SESSION['loggedin'] = true;
+                $_SESSION['username'] = $id;
+                setcookie("myCookie", $id, time() + 3600, "/php/"); 
+                header("Refresh:0; url=../index.html");
+               
+            }
+            //echo "Susseee";
+        }
+        else{
+           $message = '<h3>Invalid Username or Password!</h3>'; 
+           print $message;
+        }
+    }
+    //echo $_COOKIE["myCookie"]; 
+?>
 
 </body>
 </html>
@@ -37,27 +68,4 @@
 
 
 
-<?php 
-    include_once 'dbconnect.php';
 
-    if(isset($_POST['submit'])){
-        $USER = $_POST['user'];
-        $PASS = $_POST['pass'];
-        //$USER = stripcslashes($USER);
-
-        $sql = "Select name from users where username='$USER' and password='$PASS';";
-        $result = mysqli_query($conn,$sql);
-        $resultCheck = mysqli_num_rows($result);
-    
-        if($resultCheck > 0) {
-             while ($row = mysqli_fetch_assoc($result)){
-                echo "Log Success";
-            }
-            //echo "Susseee";
-        }
-    }
-        
-
-       
-
-?>

@@ -59,15 +59,14 @@
     include_once 'dbconnect.php';
 
     if(isset($_POST['user'])){
-        
+        $user_id = uniqid('user');
         $USER = $_POST['user'];
         $PASS = $_POST['pass'];
         $NAME = $_POST['name'];
         //$USER = stripcslashes($USER);
 
-        $sql = "Insert into users (username,password,name) values('$USER','$PASS','$NAME');";
-        mysqli_query($conn,$sql);
-       
+        $sql = "Insert into users (username,password,name,user_id) values('$USER','$PASS','$NAME','$user_id');";
+        $result = mysqli_query($conn,$sql);
+        echo $result;  
     }
-
 ?>
